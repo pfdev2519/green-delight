@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+      body{
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.356) 0 10%), url("images/background.jpeg");     
+      } 
+      </style>
+  </head>
+  <body>
+    <script src="scripts/javascript.js"></script>
+    <div class="container">
+      <div class="head">
+        <div class="title"><h1 id="title"><spam id="green">Green Delight</spam> <br>Customer Satisfaction Survey</h1></div>
+        <div class="img"><img src="images/avocado.png" alt="avocado" border="0" height="150"/></div>
+        <div class="description"><p id="description"><b>Please help us </b>learn what we're doing right and what we're meed more work on by filling out this card.</p></div>
+      </div>      
+      <form id="survey-form">
+        <fieldset><legend>How many at your party? </legend>  
+          <label for="number" id="number-label"><input id="number" name="number" class="number"  type="number" min="1" max="10" placeholder="1-10" required> people (me included) </label>
+        </fieldset>
+        <br>
+        <fieldset><legend>When did you visit us?</legend>
+          <label for="date"><input id="date" name="date" class="date" type="date" required></label>          
+        </fieldset>
+        <br>
+        <fieldset class="dropdown"><legend>What did you order?</legend>
+           <label for="order" class="dropdown-content">
+            Menu: <select name="subject" id="dropdown"><option value="" selected="selected">Select a menu</option></select><br><br>
+            Meal: <select name="topic" id="topic"><option value="" selected="selected">Please select a main meal</option></select><br><br>
+           </label>        
+        </fieldset>
+        <fieldset class="food"><legend><b>Food</b></legend>
+            <label for="food-quality">Quality</label>
+            <label for="quality"><input id="quality" name="food-quality" type="radio" value="excellent" checked>Excellent</label>
+            <label for="quality"><input id="quality" name="food-quality" type="radio" value="good">Good</label>
+            <label for="quality"><input id="quality" name="food-quality" type="radio" value="fair">Fair</label>
+            <label for="quality"><input id="quality" name="food-quality" type="radio" value="poor">Poor</label>
+            <label for="portion-size">Portion Size</label>
+            <label for="portion"><input id="portion" name="portion-size" type="radio" value="excellent" checked>Excellent</label>
+            <label for="portion"><input id="portion" name="portion-size" type="radio" value="good">Good</label>
+            <label for="portion"><input id="portion" name="portion-size" type="radio" value="fair">Fair</label>
+            <label for="portion"><input id="portion" name="portion-size" type="radio" value="poor">Poor</label>
+            <label for="easy-ordering">Easy of Ordering</label>
+            <label for="ordering"><input id="ordering" name="easy-ordering" type="radio" value="excellent" checked>Excellent</label>
+            <label for="ordering"><input id="ordering" name="easy-ordering" type="radio" value="good">Good</label>
+            <label for="ordering"><input id="ordering" name="easy-ordering" type="radio" value="fair">Fair</label>
+            <label for="ordering"><input id="ordering" name="easy-ordering" type="radio" value="poor">Poor</label>
+        </fieldset>
+        <fieldset class="service"><legend><b>Service</b></legend>
+            <label for="staff">Politeness (Staff)</label>
+            <label for="staff"><input id="staff" name="staff" type="radio" value="excellent" checked>Excellent</label>
+            <label for="staff"><input id="staff" name="staff" type="radio" value="good">Good</label>
+            <label for="staff"><input id="staff" name="staff" type="radio" value="fair">Fair</label>
+            <label for="staff"><input id="staff" name="staff" type="radio" value="poor">Poor</label>
+            <label for="clean">Cleanliness</label>
+            <label for="clean"><input id="clean" name="clean" type="radio" value="excellent" checked>Excellent</label>
+            <label for="clean"><input id="clean" name="clean" type="radio" value="good">Good</label>
+            <label for="clean"><input id="clean" name="clean" type="radio" value="fair">Fair</label>
+            <label for="clean"><input id="clean" name="clean" type="radio" value="poor">Poor</label>
+            <label for="value">Overall Value</label>
+            <label for="value"><input id="value" name="value" type="radio" value="excellent" checked>Excellent</label>
+            <label for="value"><input id="value" name="value" type="radio" value="good">Good</label>
+            <label for="value"><input id="value" name="value" type="radio" value="fair">Fair</label>
+            <label for="value"><input id="value" name="value" type="radio" value="poor">Poor</label>
+        </fieldset>
+        <fieldset class="info"><legend>Info</legend>
+          <label for="name-label" id="name-label">Name<input id="name" type="text" placeholder="Enter your name" minlength="3" required> </label>  
+           <label for="email-label" id="email-label">Email<input id="email" type="email" maxlength="255" autocomplete="off" title="Invalid email address" placeholder="Enter your email" required></label>  
+        </fieldset>
+        <fieldset class="learn"><legend>How did you learn about us?</legend>
+          <label for="checkbox-content" ><input id="checkbox-content" name="checkbox-content" class="checkbox-content" type="checkbox" value="Radio">Radio</label>
+          <label for="checkbox-content" ><input id="checkbox-content" name="checkbox-content" class="checkbox-content" type="checkbox" value="Youtube">Youtube</label>
+          <label for="checkbox-content" ><input id="checkbox-content" name="checkbox-content" class="checkbox-content" type="checkbox" value="Google">Google</label>
+          <label for="checkbox-content" ><input id="checkbox-content" name="checkbox-content" class="checkbox-content" type="checkbox" value="Friend">Friend</label>
+
+        </fieldset>   
+        <fieldset><legend>Any comments or suggestions</legend>
+            <textarea id="comments" name="textarea" class="textarea" placeholder="Enter your suggestion here..."></textarea>
+        </fieldset>
+        <div class="submit-button">
+            <input class="submit" id="submit" type="submit" value="Submit" />
+        </div>        
+      </form>
+    </div>
+    <!--<footer id="main-footer" class="footer">
+        <ul>
+            <li class="inline-block">2024 Sysco</li>
+            <li class="inline-block">About</li>
+            <li class="inline-block">Blog</li>
+            <li class="inline-block">Privacy</li>
+            <li class="inline-block">Terms</li>
+        </ul>
+    </footer>-->
+  </body>
+</html>
